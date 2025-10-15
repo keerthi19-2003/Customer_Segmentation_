@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD8780E5-3884-4F69-AF72-1C8544D6366B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DATAMINING_ASSOCIATIONRULE</RootNamespace>
+    <AssemblyName>DATAMINING_ASSOCIATIONRULE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emails">
+      <HintPath>..\..\..\..\..\SOFTWARES\PC_SUITES\Emails.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Documents and Settings\MADHU-PC\Desktop\PDFReader\PDFReader\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BrowseItems.aspx" />
+    <Content Include="Categories.aspx" />
+    <Content Include="css\aboutus.css" />
+    <Content Include="css\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\contact.css" />
+    <Content Include="css\custom-styles.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\header.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\style-ie.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\css\font-awesome.css" />
+    <Content Include="fonts\css\font-awesome.min.css" />
+    <Content Include="Homepage.aspx" />
+    <Content Include="images\200x150.gif" />
+    <Content Include="images\a1.jpg" />
+    <Content Include="images\a2.png" />
+    <Content Include="images\a3.jpg" />
+    <Content Include="images\a4.jpg" />
+    <Content Include="images\about us.png" />
+    <Content Include="images\ad125x125.jpg" />
+    <Content Include="images\ad468x60.gif" />
+    <Content Include="images\adminicon.jpg" />
+    <Content Include="images\adminicon1.jpg" />
+    <Content Include="images\ads_pic.jpg" />
+    <Content Include="images\appliance2.jpg" />
+    <Content Include="images\appliance3.jpg" />
+    <Content Include="images\appliance4.jpg" />
+    <Content Include="images\applicance1.jpg" />
+    <Content Include="images\background.gif" />
+    <Content Include="images\BannerEcommerce.png" />
+    <Content Include="images\blog_pic1.jpg" />
+    <Content Include="images\blog_pic2.jpg" />
+    <Content Include="images\body-left-back.jpg" />
+    <Content Include="images\body-right.jpg" />
+    <Content Include="images\Book1.jpg" />
+    <Content Include="images\Book2.jpg" />
+    <Content Include="images\Book3.jpg" />
+    <Content Include="images\Book4.jpg" />
+    <Content Include="images\Book5.jpg" />
+    <Content Include="images\Book6.jpg" />
+    <Content Include="images\Book7.jpg" />
+    <Content Include="images\book8.jpg" />
+    <Content Include="images\c-arrows.png" />
+    <Content Include="images\c1.jpg" />
+    <Content Include="images\c2.jpg" />
+    <Content Include="images\c3.jpg" />
+    <Content Include="images\c4.jpg" />
+    <Content Include="images\c5.JPG" />
+    <Content Include="images\cart1.jpg" />
+    <Content Include="images\cart2.png" />
+    <Content Include="images\cart5.jpg" />
+    <Content Include="images\cart6.jpg" />
+    <Content Include="images\Changepwdicon.jpg" />
+    <Content Include="images\changepwdicon1.jpg" />
+    <Content Include="images\change_password.png" />
+    <Content Include="images\clear.gif" />
+    <Content Include="images\comments.gif" />
+    <Content Include="images\contact us button.jpg" />
+    <Content Include="images\Container_Header.gif" />
+    <Content Include="images\contentbody.gif" />
+    <Content Include="images\contentfoot.gif" />
+    <Content Include="images\contenthead.gif" />
+    <Content Include="images\delete2.png" />
+    <Content Include="images\DeleteIcon.jpg" />
+    <Content Include="images\det_pic.jpg" />
+    <Content Include="images\divider.gif" />
+    <Content Include="images\divider1.jpg" />
+    <Content Include="images\divider2.jpg" />
+    <Content Include="images\download1.jpeg" />
+    <Content Include="images\EditIcon.jpg" />
+    <Content Include="images\Faqsicon.JPG" />
+    <Content Include="images\feedback1.jpg" />
+    <Content Include="images\feedback2.jpeg" />
+    <Content Include="images\feedbackIcon.jpg" />
+    <Content Include="images\feedbackicon1.jpg" />
+    <Content Include="images\feedbackicon2.jpg" />
+    <Content Include="images\findout.jpg" />
+    <Content Include="images\footer.jpg" />
+    <Content Include="images\gallery.jpg" />
+    <Content Include="images\gas.JPG" />
+    <Content Include="images\goshop.jpg" />
+    <Content Include="images\Grid_ActionDelete.gif" />
+    <Content Include="images\Grid_Footer.gif" />
+    <Content Include="images\Grid_Header.gif" />
+    <Content Include="images\Grid_RowAlternate.gif" />
+    <Content Include="images\Grid_RowHover.gif" />
+    <Content Include="images\Grid_RowNormal.gif" />
+    <Content Include="images\Grid_RowNumber.gif" />
+    <Content Include="images\icon1.jpg" />
+    <Content Include="images\icon2.jpg" />
+    <Content Include="images\icon3.jpg" />
+    <Content Include="images\icon4.jpg" />
+    <Content Include="images\icon5.jpg" />
+    <Content Include="images\images.jpeg" />
+    <Content Include="images\ipod.jpg" />
+    <Content Include="images\lcd.jpg" />
+    <Content Include="images\loginbg2.jpg" />
+    <Content Include="images\loginbg4.jpg" />
+    <Content Include="images\loginbg9.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo1.jpg" />
+    <Content Include="images\logo2.jpg" />
+    <Content Include="images\mainlogin1.jpg" />
+    <Content Include="images\mainlogo.jpg" />
+    <Content Include="images\mainlogo123.jpg" />
+    <Content Include="images\mainlogo2.jpg" />
+    <Content Include="images\mainlogo3.jpg" />
+    <Content Include="images\mainlogo5.jpg" />
+    <Content Include="images\mainlogo6.jpg" />
+    <Content Include="images\mainlogo7.jpg" />
+    <Content Include="images\mainlogo8.jpg" />
+    <Content Include="images\members-icon.jpg" />
+    <Content Include="images\menu.jpg" />
+    <Content Include="images\Message_Error.png" />
+    <Content Include="images\Message_Information.png" />
+    <Content Include="images\Message_Success.png" />
+    <Content Include="images\Message_Warning.png" />
+    <Content Include="images\mixer.JPG" />
+    <Content Include="images\mobile.jpg" />
+    <Content Include="images\mpbile.jpg" />
+    <Content Include="images\pic1.jpg" />
+    <Content Include="images\proceed.jpg" />
+    <Content Include="images\profile1.jpg" />
+    <Content Include="images\profile2.png" />
+    <Content Include="images\Progressbar_Content.gif" />
+    <Content Include="images\Progressbar_Wrapper.gif" />
+    <Content Include="images\refrigarator.JPG" />
+    <Content Include="images\registericon.gif" />
+    <Content Include="images\registericon.png" />
+    <Content Include="images\registerlogo.jpg" />
+    <Content Include="images\replybtn.png" />
+    <Content Include="images\resetpwd.jpg" />
+    <Content Include="images\right-ad1.jpg" />
+    <Content Include="images\right-ad2.jpg" />
+    <Content Include="images\right-ad3.jpg" />
+    <Content Include="images\right-box1.jpg" />
+    <Content Include="images\rss.gif" />
+    <Content Include="images\sale.jpg" />
+    <Content Include="images\satisicon.jpg" />
+    <Content Include="images\search.jpg" />
+    <Content Include="images\security-icon-big.gif" />
+    <Content Include="images\serviceicon.jpg" />
+    <Content Include="images\shade.png" />
+    <Content Include="images\slide1.jpg" />
+    <Content Include="images\slide2.jpg" />
+    <Content Include="images\slider_bg.jpg" />
+    <Content Include="images\social-icons.png" />
+    <Content Include="images\submit.jpg" />
+    <Content Include="images\t1.png" />
+    <Content Include="images\t2.jpeg" />
+    <Content Include="images\t5.png" />
+    <Content Include="images\templatemo_header_01_bg.jpg" />
+    <Content Include="images\tools1.jpg" />
+    <Content Include="images\washingmachineimage1.jpg" />
+    <Content Include="images\washingmachineimage2.JPG" />
+    <Content Include="images\_featured.jpg" />
+    <Content Include="images\_flickr1.jpg" />
+    <Content Include="images\_flickr2.jpg" />
+    <Content Include="images\_flickr3.jpg" />
+    <Content Include="images\_flickr4.jpg" />
+    <Content Include="images\_flickr5.jpg" />
+    <Content Include="images\_flickr6.jpg" />
+    <Content Include="images\_thumb1.jpg" />
+    <Content Include="images\_thumb2.jpg" />
+    <Content Include="images\_thumb3.jpg" />
+    <Content Include="images\_thumb4.jpg" />
+    <Content Include="images\_video.jpg" />
+    <Content Include="img\apple-touch-icon-114x114.png" />
+    <Content Include="img\apple-touch-icon-72x72.png" />
+    <Content Include="img\apple-touch-icon.png" />
+    <Content Include="img\author-avatar.jpg" />
+    <Content Include="img\back-top-btn.png" />
+    <Content Include="img\bg_direction_nav.png" />
+    <Content Include="img\container-bg.png" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\gallery-item-hover.png" />
+    <Content Include="img\gallery-item-icons.png" />
+    <Content Include="img\gallery\blog-med-img-1.jpg" />
+    <Content Include="img\gallery\client-img-1.png" />
+    <Content Include="img\gallery\client-img-2.png" />
+    <Content Include="img\gallery\client-img-3.png" />
+    <Content Include="img\gallery\client-img-4.png" />
+    <Content Include="img\gallery\client-img-5.png" />
+    <Content Include="img\gallery\flickr-img-1.jpg" />
+    <Content Include="img\gallery\gallery-img-1-3col.jpg" />
+    <Content Include="img\gallery\gallery-img-1-4col-cir.jpg" />
+    <Content Include="img\gallery\gallery-img-1-4col.jpg" />
+    <Content Include="img\gallery\gallery-img-1-6col.jpg" />
+    <Content Include="img\gallery\gallery-img-1-full.jpg" />
+    <Content Include="img\gallery\gallery-img-13-6col.jpg" />
+    <Content Include="img\gallery\gallery-img-14-6col.jpg" />
+    <Content Include="img\gallery\gallery-img-2-thumb.jpg" />
+    <Content Include="img\gallery\post-img-1.jpg" />
+    <Content Include="img\gallery\slidder1.jpg" />
+    <Content Include="img\gallery\slidder2.jpg" />
+    <Content Include="img\gallery\slidder3.jpg" />
+    <Content Include="img\gallery\slidder4.jpg" />
+    <Content Include="img\gallery\slider-img-1.jpg" />
+    <Content Include="img\gallery\slider1.jpeg" />
+    <Content Include="img\gallery\slider2.jpg" />
+    <Content Include="img\gallery\slider3.jpg" />
+    <Content Include="img\gallery\slider4.jpeg" />
+    <Content Include="img\gallery\thumbnail-270x130.jpg" />
+    <Content Include="img\gallery\thumbnail-270x300.jpg" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\location-map.jpg" />
+    <Content Include="img\page-bg-1.jpg" />
+    <Content Include="img\piccolo-footer-logo.png" />
+    <Content Include="img\piccolo-logo.png" />
+    <Content Include="img\piccolo-logo1.png" />
+    <Content Include="img\piccolo-logo2.png" />
+    <Content Include="img\post-item-hover.png" />
+    <Content Include="img\prettyPhoto\default\default_thumb.png" />
+    <Content Include="img\prettyPhoto\default\loader.gif" />
+    <Content Include="img\prettyPhoto\default\sprite.png" />
+    <Content Include="img\prettyPhoto\default\sprite_next.png" />
+    <Content Include="img\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="img\prettyPhoto\default\sprite_x.png" />
+    <Content Include="img\prettyPhoto\default\sprite_y.png" />
+    <Content Include="img\rnd-client-mask.png" />
+    <Content Include="img\slider-caption-bg.png" />
+    <Content Include="img\social-icons.png" />
+    <Content Include="img\user-avatar.jpg" />
+    <Content Include="ItemFeedbacks.aspx" />
+    <Content Include="Item_Photos\1.jpeg" />
+    <Content Include="Item_Photos\2.3.jpeg" />
+    <Content Include="Item_Photos\2.5.jpeg" />
+    <Content Include="Item_Photos\2.6.jpeg" />
+    <Content Include="Item_Photos\2.jpeg" />
+    <Content Include="Item_Photos\21.jpeg" />
+    <Content Include="Item_Photos\22.jpeg" />
+    <Content Include="Item_Photos\24.jpeg" />
+    <Content Include="Item_Photos\3.2.jpeg" />
+    <Content Include="Item_Photos\3.5.jpeg" />
+    <Content Include="Item_Photos\3.6.jpeg" />
+    <Content Include="Item_Photos\3.jpeg" />
+    <Content Include="Item_Photos\31.jpeg" />
+    <Content Include="Item_Photos\33.jpeg" />
+    <Content Include="Item_Photos\34.jpeg" />
+    <Content Include="Item_Photos\4.1.jpeg" />
+    <Content Include="Item_Photos\4.4.jpeg" />
+    <Content Include="Item_Photos\42.jpeg" />
+    <Content Include="Item_Photos\43.jpeg" />
+    <Content Include="Item_Photos\44.jpeg" />
+    <Content Include="Item_Photos\45.jpeg" />
+    <Content Include="Item_Photos\5.jpeg" />
+    <Content Include="Item_Photos\6.jpeg" />
+    <Content Include="Item_Photos\7.jpeg" />
+    <Content Include="Item_Photos\8.jpeg" />
+    <Content Include="Item_Photos\9.jpeg" />
+    <Content Include="Item_Photos\A century is not enough.jpeg" />
+    <Content Include="Item_Photos\aa.jpg" />
+    <Content Include="Item_Photos\ab.jpg" />
+    <Content Include="Item_Photos\ac.jpg" />
+    <Content Include="Item_Photos\ad.jpg" />
+    <Content Include="Item_Photos\Adidas original sweatshirts for men.jpg" />
+    <Content Include="Item_Photos\Adiyogi.jpeg" />
+    <Content Include="Item_Photos\ae.jpg" />
+    <Content Include="Item_Photos\af.jpg" />
+    <Content Include="Item_Photos\ag.jpg" />
+    <Content Include="Item_Photos\ah.jpg" />
+    <Content Include="Item_Photos\ai.jpg" />
+    <Content Include="Item_Photos\aj.jpg" />
+    <Content Include="Item_Photos\ak.jpg" />
+    <Content Include="Item_Photos\al.jpg" />
+    <Content Include="Item_Photos\am.jpg" />
+    <Content Include="Item_Photos\an.jpg" />
+    <Content Include="Item_Photos\ao.jpg" />
+    <Content Include="Item_Photos\ap.jpg" />
+    <Content Include="Item_Photos\Apple ipad mini 3.jpeg" />
+    <Content Include="Item_Photos\Apple ipad mini 4.jpeg" />
+    <Content Include="Item_Photos\Apple ipad mini.jpeg" />
+    <Content Include="Item_Photos\Apple ipad pro.jpeg" />
+    <Content Include="Item_Photos\Apple iphone 4s.jpg" />
+    <Content Include="Item_Photos\Apple iphone 6 plus.jpeg" />
+    <Content Include="Item_Photos\Apple iphone 6.jpeg" />
+    <Content Include="Item_Photos\Apple iphone 6s plus.jpg" />
+    <Content Include="Item_Photos\Apple iphone 6s.jpeg" />
+    <Content Include="Item_Photos\Apple iphone 7 plus.jpeg" />
+    <Content Include="Item_Photos\Aviater black biker leather jacket .jpg" />
+    <Content Include="Item_Photos\b.jpg" />
+    <Content Include="Item_Photos\Baby boy 3 piece striped cardigan dress.jpg" />
+    <Content Include="Item_Photos\bad rac.jpg" />
+    <Content Include="Item_Photos\bad shoes.jpg" />
+    <Content Include="Item_Photos\Beige netted anarkali party salwar.jpg" />
+    <Content Include="Item_Photos\Beige netted sleevless kurta.jpg" />
+    <Content Include="Item_Photos\Beige skirt with pink top.jpg" />
+    <Content Include="Item_Photos\Black anarkali festive salwar suit.jpg" />
+    <Content Include="Item_Photos\Black and pink cotton saree.jpg" />
+    <Content Include="Item_Photos\Black full arm shirt with hoody.jpg" />
+    <Content Include="Item_Photos\Black full arm winter sweatshirt.jpg" />
+    <Content Include="Item_Photos\Black leather formal shoes for men.jpg" />
+    <Content Include="Item_Photos\Black tinted round sunglasses for men.jpg" />
+    <Content Include="Item_Photos\Black wool winter sweaters for men.jpg" />
+    <Content Include="Item_Photos\Blue and black georgette saree.jpg" />
+    <Content Include="Item_Photos\Blue and grey 3 piece cardigan.jpg" />
+    <Content Include="Item_Photos\Blue and white baby boy clothing.jpg" />
+    <Content Include="Item_Photos\Blue and white sneakers mens shoes.jpg" />
+    <Content Include="Item_Photos\Blue and white striped sweatshirts.jpg" />
+    <Content Include="Item_Photos\Blue Aviator and Wayfarer Designer Sunglasses.jpg" />
+    <Content Include="Item_Photos\Blue jeans with red checkered shits for men.jpg" />
+    <Content Include="Item_Photos\Blue jeans with white jacket for boys.jpg" />
+    <Content Include="Item_Photos\Blue leather canvas shoes for men.jpg" />
+    <Content Include="Item_Photos\Blue minnie mouse cartoon jacket.jpg" />
+    <Content Include="Item_Photos\Blue shaded jeans.jpg" />
+    <Content Include="Item_Photos\Breitling analog watch for men.jpg" />
+    <Content Include="Item_Photos\Brown and white casual shoes for men.jpg" />
+    <Content Include="Item_Photos\Brown Full Sleeve Solid Mens Jacket.jpg" />
+    <Content Include="Item_Photos\butter .jpg" />
+    <Content Include="Item_Photos\Butterfly Smart 750-Watt Mixer Grinder with 4 Jar %28Grey%29 .jpg" />
+    <Content Include="Item_Photos\c.jpg" />
+    <Content Include="Item_Photos\Canon DSLR with dual lens.jpg" />
+    <Content Include="Item_Photos\canon dslr.jpg" />
+    <Content Include="Item_Photos\cartoon clothing summer dress.jpg" />
+    <Content Include="Item_Photos\Casual leather loafer shoes for men.jpg" />
+    <Content Include="Item_Photos\Classical Design Cotton Men Dress Shirts.jpg" />
+    <Content Include="Item_Photos\Cotton full arm slim fitted shirt.jpg" />
+    <Content Include="Item_Photos\Dark blue jeans.jpg" />
+    <Content Include="Item_Photos\Dark gray men%27s jeans.png" />
+    <Content Include="Item_Photos\Dell Inspiron 15 3000 Series 15.6 Inch %28Intel Pentium N3700, 4 GB RAM, 500 GB HDD.jpg" />
+    <Content Include="Item_Photos\Dell inspiron 3148.jpg" />
+    <Content Include="Item_Photos\Dell Inspiron 3162 .jpg" />
+    <Content Include="Item_Photos\Dell inspiron 3452.jpg" />
+    <Content Include="Item_Photos\Dell inspiron 3558.JPG" />
+    <Content Include="Item_Photos\Dell inspiron 5378.jpg" />
+    <Content Include="Item_Photos\Dell inspiron 7560.jpeg" />
+    <Content Include="Item_Photos\Dell vostro 3565.jpg" />
+    <Content Include="Item_Photos\dell.jpg" />
+    <Content Include="Item_Photos\Designer sunglasses for men.jpg" />
+    <Content Include="Item_Photos\Diamond green men winter fleece hoodies.jpg" />
+    <Content Include="Item_Photos\Difficulty of Being Good.jpeg" />
+    <Content Include="Item_Photos\download.png" />
+    <Content Include="Item_Photos\e.jpg" />
+    <Content Include="Item_Photos\Enticer Black Dial Mens Watch.jpg" />
+    <Content Include="Item_Photos\f.jpg" />
+    <Content Include="Item_Photos\Fastrack rectangular frame summer sunglasses for men.jpg" />
+    <Content Include="Item_Photos\Fossil FS Analog Watch For Men.jpg" />
+    <Content Include="Item_Photos\g.jpg" />
+    <Content Include="Item_Photos\Gazian and girling half brown shoes.jpg" />
+    <Content Include="Item_Photos\Girly pullover frocks.jpg" />
+    <Content Include="Item_Photos\GoPro HERO 5 Sports &amp; Action Camera.jpg" />
+    <Content Include="Item_Photos\gopro.jpg" />
+    <Content Include="Item_Photos\Green and blue silk saree.jpg" />
+    <Content Include="Item_Photos\Green chanderi cotton saree.jpg" />
+    <Content Include="Item_Photos\Green chanderi kurta.jpg" />
+    <Content Include="Item_Photos\Grey saree with embroidered blouse.jpg" />
+    <Content Include="Item_Photos\Grey sweatshirts for men.jpg" />
+    <Content Include="Item_Photos\h.jpg" />
+    <Content Include="Item_Photos\Hollow out breathable summer leather sneakers.jpg" />
+    <Content Include="Item_Photos\HP 10 tablet.jpg" />
+    <Content Include="Item_Photos\HP 7 voice tab.jpg" />
+    <Content Include="Item_Photos\HP elite pad 900.jpg" />
+    <Content Include="Item_Photos\HP omni 10 tablet.jpg" />
+    <Content Include="Item_Photos\HP pro slate 8 pen press tablet.jpg" />
+    <Content Include="Item_Photos\HP slate 6 voice tablet.jpeg" />
+    <Content Include="Item_Photos\HP slate 7 voice tab.jpg" />
+    <Content Include="Item_Photos\HP slate 8 plus.jpg" />
+    <Content Include="Item_Photos\HP stream 7 tablet.jpg" />
+    <Content Include="Item_Photos\HTC 10 phone.jpeg" />
+    <Content Include="Item_Photos\HTC butterfly.png" />
+    <Content Include="Item_Photos\HTC desire 10 pro.jpg" />
+    <Content Include="Item_Photos\HTC desire 820s.jpeg" />
+    <Content Include="Item_Photos\HTC desire eye.jpeg" />
+    <Content Include="Item_Photos\HTC one a9 phone.jpeg" />
+    <Content Include="Item_Photos\HTC one max.jpeg" />
+    <Content Include="Item_Photos\HTC one mobile phone.png" />
+    <Content Include="Item_Photos\HTC U Play.jpg" />
+    <Content Include="Item_Photos\I Do What I Do.jpeg" />
+    <Content Include="Item_Photos\Irregular metal frame sunglasses for men.jpg" />
+    <Content Include="Item_Photos\Ivory romper girl dress.jpg" />
+    <Content Include="Item_Photos\j.jpg" />
+    <Content Include="Item_Photos\JBN Creation Grey Matka Silk Mod or a Nehru Jacket.jpg" />
+    <Content Include="Item_Photos\JEE Main Prep Book.jpeg" />
+    <Content Include="Item_Photos\k.jpg" />
+    <Content Include="Item_Photos\Karnataka CET solved papers.jpeg" />
+    <Content Include="Item_Photos\Kcoyster mens plaid shirts small checks gingham shirts.jpg" />
+    <Content Include="Item_Photos\Korvari handloom grey red silk cotton saree.jpg" />
+    <Content Include="Item_Photos\l.jpg" />
+    <Content Include="Item_Photos\leather watch.jpg" />
+    <Content Include="Item_Photos\Lenovo a3000 tablet.jpeg" />
+    <Content Include="Item_Photos\Lenovo a7-50 tablet.jpeg" />
+    <Content Include="Item_Photos\Lenovo a8-50 tablet.jpeg" />
+    <Content Include="Item_Photos\Lenovo G50-45.jpg" />
+    <Content Include="Item_Photos\Lenovo G50-70.png" />
+    <Content Include="Item_Photos\Lenovo ideapad 110.jpg" />
+    <Content Include="Item_Photos\Lenovo ideapad 310.jpg" />
+    <Content Include="Item_Photos\Lenovo ideapad G50-80.jpg" />
+    <Content Include="Item_Photos\Lenovo ideapad yoga 510.png" />
+    <Content Include="Item_Photos\Lenovo ideatab a-2107.jpeg" />
+    <Content Include="Item_Photos\Lenovo miix 3 tablet.jpeg" />
+    <Content Include="Item_Photos\Lenovo tab 2 a7-20.jpeg" />
+    <Content Include="Item_Photos\Lenovo tab S8.jpeg" />
+    <Content Include="Item_Photos\Lenovo yoga 310.png" />
+    <Content Include="Item_Photos\Lenovo yoga 500.png" />
+    <Content Include="Item_Photos\Lenovo yoga tablet 3.jpeg" />
+    <Content Include="Item_Photos\LG 1 Ton 3 Star Inverter Split AC.jpg" />
+    <Content Include="Item_Photos\lg ac.jpg" />
+    <Content Include="Item_Photos\Light Blue True Denim jeans.jpg" />
+    <Content Include="Item_Photos\Long Sleeve tee New Arrivel Fashion Cotton Anti-Wrinkle striped.jpg" />
+    <Content Include="Item_Photos\m.jpg" />
+    <Content Include="Item_Photos\Matrix Analogue Blue Dail Mens Watch.jpg" />
+    <Content Include="Item_Photos\men autumn motorcycle leather jacket.jpg" />
+    <Content Include="Item_Photos\Men Polo Hombre Shirt Mens Fashion Collar shirts .jpg" />
+    <Content Include="Item_Photos\Men Polo Hombre Shirt Mens Fashion Collar shirts Long Sleeve.jpg" />
+    <Content Include="Item_Photos\Men Polo Shirt Solid Turn Down Collar Short-sleeve.jpg" />
+    <Content Include="Item_Photos\Men Shirt Slim Fit Striped Business Formal Shirt.jpg" />
+    <Content Include="Item_Photos\Men Shirt Slim Fit Striped Formal Shirt.jpg" />
+    <Content Include="Item_Photos\Men sleeveless wool sweaters.jpg" />
+    <Content Include="Item_Photos\Mens Casual Basic Knitted Turtleneck Slim Fit Pullover Thermal Sweaters.jpg" />
+    <Content Include="Item_Photos\Mens fashion winter knitted cotton jacket .jpg" />
+    <Content Include="Item_Photos\Mens wooded winter sweatshirts.jpg" />
+    <Content Include="Item_Photos\Moto G turbo.jpeg" />
+    <Content Include="Item_Photos\Moto G4 play.jpeg" />
+    <Content Include="Item_Photos\Moto G4 plus.jpeg" />
+    <Content Include="Item_Photos\Moto G5 plus.jpeg" />
+    <Content Include="Item_Photos\Moto G5.jpeg" />
+    <Content Include="Item_Photos\Moto M mobile phone.jpeg" />
+    <Content Include="Item_Photos\Moto X force.jpeg" />
+    <Content Include="Item_Photos\Moto X play.jpeg" />
+    <Content Include="Item_Photos\Moto X style black mobile.jpeg" />
+    <Content Include="Item_Photos\Moto Z mobile.jpeg" />
+    <Content Include="Item_Photos\Moto Z play.jpeg" />
+    <Content Include="Item_Photos\Multicolour canvas shoes for men.jpg" />
+    <Content Include="Item_Photos\Multicolour ethnic shoes for men.jpg" />
+    <Content Include="Item_Photos\Nautica analog blue belt watch.jpg" />
+    <Content Include="Item_Photos\Navy blue rust brown slendid anarkali salwar.jpg" />
+    <Content Include="Item_Photos\New hoodies sweatshirts cotton fleece for men .jpg" />
+    <Content Include="Item_Photos\New Looks Mens blue Linen Kurta.jpg" />
+    <Content Include="Item_Photos\New Looks Mens maroon Linen Kurta Pyjama.jpg" />
+    <Content Include="Item_Photos\New Looks Mens white Linen Kurta.png" />
+    <Content Include="Item_Photos\Nike blue sneakers.jpg" />
+    <Content Include="Item_Photos\Nikon D3400 DSLR Camera Body with Dual Lens.jpg" />
+    <Content Include="Item_Photos\nikon.jpg" />
+    <Content Include="Item_Photos\No pain no gain hoody sweatshirts.jpg" />
+    <Content Include="Item_Photos\Nokia1.jpg" />
+    <Content Include="Item_Photos\Nokia2.jpg" />
+    <Content Include="Item_Photos\Nokia3.jpg" />
+    <Content Include="Item_Photos\Nokia4.jpg" />
+    <Content Include="Item_Photos\Nokia5.jpg" />
+    <Content Include="Item_Photos\Omega black dial watch for men.jpg" />
+    <Content Include="Item_Photos\One Indian Girl.jpeg" />
+    <Content Include="Item_Photos\p.jpg" />
+    <Content Include="Item_Photos\Pink and beige jute dress with a cap.jpg" />
+    <Content Include="Item_Photos\Pink and gold silk saree.jpg" />
+    <Content Include="Item_Photos\Pink baptism and birthday dress for girls.jpg" />
+    <Content Include="Item_Photos\Pink festive anarkali suit.jpg" />
+    <Content Include="Item_Photos\Pink kurta.jpg" />
+    <Content Include="Item_Photos\Preethi Cafe Zest CM210 Drip Coffee Maker.jpg" />
+    <Content Include="Item_Photos\preeti coffee.jpg" />
+    <Content Include="Item_Photos\Quantitative Aptitude.jpeg" />
+    <Content Include="Item_Photos\Ray ban aviator sunglasses for men.jpg" />
+    <Content Include="Item_Photos\Ray ban golden brown frame sunglasses for men.jpg" />
+    <Content Include="Item_Photos\Ray ban round frame sunglasses for men.jpg" />
+    <Content Include="Item_Photos\Ray ban waferer sunglasses for men.jpg" />
+    <Content Include="Item_Photos\Ray ban wings sunglasses for men.jpg" />
+    <Content Include="Item_Photos\Red and black checkered frock.jpg" />
+    <Content Include="Item_Photos\Red and black printed anarkali kurta.jpg" />
+    <Content Include="Item_Photos\Red and blue party dress.jpg" />
+    <Content Include="Item_Photos\Red georgette saree.jpg" />
+    <Content Include="Item_Photos\Red netted saree.jpg" />
+    <Content Include="Item_Photos\Redmi mi max mobile phones.jpg" />
+    <Content Include="Item_Photos\Redmi note 3 phones.jpg" />
+    <Content Include="Item_Photos\Roadster men grey canvas shoes.jpg" />
+    <Content Include="Item_Photos\rolex casual watch.jpg" />
+    <Content Include="Item_Photos\Rolex champagne dial rose gold watch.jpg" />
+    <Content Include="Item_Photos\Round matte brown red sunglasses for men.jpg" />
+    <Content Include="Item_Photos\SAM TV.jpg" />
+    <Content Include="Item_Photos\Samsung 32 inch Led tv.jpg" />
+    <Content Include="Item_Photos\Samsung Galaxy .jpg" />
+    <Content Include="Item_Photos\Samsung Galaxy A5 %28Champagne Gold, 16 GB%29.jpeg" />
+    <Content Include="Item_Photos\Samsung Galaxy J7 Prime SM-G610F %28Gold, 16GB%29.jpg" />
+    <Content Include="Item_Photos\Samsung Galaxy Note 4 %28Black%29.jpg" />
+    <Content Include="Item_Photos\Samsung Galaxy S6 32GB Single Sim - Gold.jpg" />
+    <Content Include="Item_Photos\Samsung J2 Silver 8GB.jpg" />
+    <Content Include="Item_Photos\Samsung On5 Pro %28Gold%29.jpg" />
+    <Content Include="Item_Photos\Shaded jeans.jpg" />
+    <Content Include="Item_Photos\Sita.jpeg" />
+    <Content Include="Item_Photos\Sony Bravia 32 inch HD LED TV.jpg" />
+    <Content Include="Item_Photos\sony cam.jpg" />
+    <Content Include="Item_Photos\Sony camcorder.jpg" />
+    <Content Include="Item_Photos\sony tv.jpg" />
+    <Content Include="Item_Photos\Sony1.jpg" />
+    <Content Include="Item_Photos\Sony2.jpg" />
+    <Content Include="Item_Photos\Sony3.jpg" />
+    <Content Include="Item_Photos\Sony4.jpg" />
+    <Content Include="Item_Photos\Sony5.jpg" />
+    <Content Include="Item_Photos\Spring Summer 2017 new Patchwork white button down.jpg" />
+    <Content Include="Item_Photos\Spring summer cat font bold dress.jpg" />
+    <Content Include="Item_Photos\Square polarized sunglasses for men.jpg" />
+    <Content Include="Item_Photos\straight slim gray jeans.png" />
+    <Content Include="Item_Photos\Strauss Yoga Block .jpg" />
+    <Content Include="Item_Photos\Strauss Yoga Mat, 6mm.jpg" />
+    <Content Include="Item_Photos\Stretchable men%27s jeans.jpeg" />
+    <Content Include="Item_Photos\Summer Dress Pink With Belt Sexy Women Chiffon Dre.jpg" />
+    <Content Include="Item_Photos\T Shirt1.jpg" />
+    <Content Include="Item_Photos\T Shirt2.jpg" />
+    <Content Include="Item_Photos\T Shirt3.jpg" />
+    <Content Include="Item_Photos\T shirts Men Fashion curling short - sleeved Slim stretch.jpg" />
+    <Content Include="Item_Photos\t.jpg" />
+    <Content Include="Item_Photos\Teddy1.jpg" />
+    <Content Include="Item_Photos\Teddy2.jpg" />
+    <Content Include="Item_Photos\Teddy3.jpg" />
+    <Content Include="Item_Photos\The Perils of Being Moderately Famous.jpeg" />
+    <Content Include="Item_Photos\Theory of cookery.jpeg" />
+    <Content Include="Item_Photos\Torn jeans.jpg" />
+    <Content Include="Item_Photos\Trees of Delhi.jpeg" />
+    <Content Include="Item_Photos\Tshirts1.jpg" />
+    <Content Include="Item_Photos\v.jpg" />
+    <Content Include="Item_Photos\Vintage Swing Dress Stretchy Cotton Sleeveless Hal.jpg" />
+    <Content Include="Item_Photos\Voltas 1 Ton 5 Star %282017%29 Split AC.jpg" />
+    <Content Include="Item_Photos\voltas.jpg" />
+    <Content Include="Item_Photos\w.jpg" />
+    <Content Include="Item_Photos\white and pink bow dress.jpg" />
+    <Content Include="Item_Photos\White cotton saree.jpg" />
+    <Content Include="Item_Photos\white jeans for men.jpg" />
+    <Content Include="Item_Photos\White kurta with blue waist .jpg" />
+    <Content Include="Item_Photos\White shirt with green boy shirt.jpg" />
+    <Content Include="Item_Photos\White western frock with hat.jpg" />
+    <Content Include="Item_Photos\White zipper sweatshirts hoodies.jpg" />
+    <Content Include="Item_Photos\Women black solid anarkali kurta.jpg" />
+    <Content Include="Item_Photos\Women Elegant Blouses Shirts Ladies O Neck Flounce.jpg" />
+    <Content Include="Item_Photos\Woodland Mens Leather Boots.jpg" />
+    <Content Include="Item_Photos\x.jpg" />
+    <Content Include="Item_Photos\Xiomi mi 3 mobile phones.jpeg" />
+    <Content Include="Item_Photos\Xiomi mi 5 mobile phones.jpeg" />
+    <Content Include="Item_Photos\Xiomi redmi 3s prime mobile phones.jpeg" />
+    <Content Include="Item_Photos\Xiomi redmi 4a mobile phones.jpeg" />
+    <Content Include="Item_Photos\Xiomi redmi 4x mobile phones.jpeg" />
+    <Content Include="Item_Photos\Xiomi redmi note 4 mobile phones.jpeg" />
+    <Content Include="Item_Photos\Xmen bomber tan brown leather jacket.jpg" />
+    <Content Include="Item_Photos\y.jpg" />
+    <Content Include="Item_Photos\Yellow chiffon saree.jpg" />
+    <Content Include="Item_Photos\Yellow pink cotton saree.jpg" />
+    <Content Include="Item_Photos\yoga blk.jpg" />
+    <Content Include="Item_Photos\yoga mat.jpg" />
+    <Content Include="Item_Photos\Yonex Carbonate Racquet.jpg" />
+    <Content Include="Item_Photos\Yonex Super Ace Light Badminton Shoes.jpg" />
+    <Content Include="Item_Photos\z.jpg" />
+    <Content Include="Item_Photos\Zipper mens thrasher hoodie.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\homepage.js" />
+    <Content Include="js\jquery.cslider.js" />
+    <Content Include="js\jquery.custom.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\jquery.quicksand.js" />
+    <Content Include="js\modernizr.custom.28468.js" />
+    <Content Include="js\owl.carousel.js" />
+    <Content Include="login.css" />
+    <Content Include="login.js" />
+    <Content Include="MemberCart.aspx" />
+    <Content Include="PostItemFeedbacks.aspx" />
+    <Content Include="regis.css" />
+    <Content Include="regis.js" />
+    <Content Include="SearchModule.aspx" />
+    <Content Include="style\style-ie.css" />
+    <Content Include="style\style.css" />
+    <Content Include="Subcategories.aspx" />
+    <Content Include="ThemeBlue.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Class.cs" />
+    <Compile Include="Admin_CustomerTransactions.aspx.cs">
+      <DependentUpon>Admin_CustomerTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CustomerTransactions.aspx.designer.cs">
+      <DependentUpon>Admin_CustomerTransactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Homepage.aspx.cs">
+      <DependentUpon>Admin_Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Homepage.aspx.designer.cs">
+      <DependentUpon>Admin_Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Items.aspx.cs">
+      <DependentUpon>Admin_Items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Items.aspx.designer.cs">
+      <DependentUpon>Admin_Items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Loginpage.aspx.cs">
+      <DependentUpon>Admin_Loginpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Loginpage.aspx.designer.cs">
+      <DependentUpon>Admin_Loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Tasks.aspx.cs">
+      <DependentUpon>Admin_Tasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Tasks.aspx.designer.cs">
+      <DependentUpon>Admin_Tasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseItems.aspx.cs">
+      <DependentUpon>BrowseItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrowseItems.aspx.designer.cs">
+      <DependentUpon>BrowseItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CartDetails.aspx.cs">
+      <DependentUpon>CartDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartDetails.aspx.designer.cs">
+      <DependentUpon>CartDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRules.cs" />
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataLayer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemFeedbacks.aspx.cs">
+      <DependentUpon>ItemFeedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemFeedbacks.aspx.designer.cs">
+      <DependentUpon>ItemFeedbacks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login_page.aspx.cs">
+      <DependentUpon>Login_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login_page.aspx.designer.cs">
+      <DependentUpon>Login_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Member.Master.cs">
+      <DependentUpon>Member.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member.Master.designer.cs">
+      <DependentUpon>Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MemberCart.aspx.cs">
+      <DependentUpon>MemberCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberCart.aspx.designer.cs">
+      <DependentUpon>MemberCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Class.cs" />
+    <Compile Include="Member_Homepage.aspx.cs">
+      <DependentUpon>Member_Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member_Homepage.aspx.designer.cs">
+      <DependentUpon>Member_Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Tasks.aspx.cs">
+      <DependentUpon>Member_Tasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member_Tasks.aspx.designer.cs">
+      <DependentUpon>Member_Tasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTransactions.aspx.cs">
+      <DependentUpon>MyTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTransactions.aspx.designer.cs">
+      <DependentUpon>MyTransactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostItemFeedbacks.aspx.cs">
+      <DependentUpon>PostItemFeedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostItemFeedbacks.aspx.designer.cs">
+      <DependentUpon>PostItemFeedbacks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Registration_page.aspx.cs">
+      <DependentUpon>Registration_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration_page.aspx.designer.cs">
+      <DependentUpon>Registration_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewOrder.aspx.cs">
+      <DependentUpon>ReviewOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReviewOrder.aspx.designer.cs">
+      <DependentUpon>ReviewOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchModule.aspx.cs">
+      <DependentUpon>SearchModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchModule.aspx.designer.cs">
+      <DependentUpon>SearchModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signout.aspx.cs">
+      <DependentUpon>Signout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signout.aspx.designer.cs">
+      <DependentUpon>Signout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subcategories.aspx.cs">
+      <DependentUpon>Subcategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subcategories.aspx.designer.cs">
+      <DependentUpon>Subcategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionDetails.aspx.cs">
+      <DependentUpon>TransactionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransactionDetails.aspx.designer.cs">
+      <DependentUpon>TransactionDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewItemDetails.aspx.cs">
+      <DependentUpon>ViewItemDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewItemDetails.aspx.designer.cs">
+      <DependentUpon>ViewItemDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewItems.aspx.cs">
+      <DependentUpon>ViewItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewItems.aspx.designer.cs">
+      <DependentUpon>ViewItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor.cs" />
+    <Compile Include="Web References\CC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.Master" />
+    <None Include="css\.DS_Store" />
+    <None Include="DataLayer.xsc">
+      <DependentUpon>DataLayer.xsd</DependentUpon>
+    </None>
+    <None Include="DataLayer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataLayer1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataLayer.xss">
+      <DependentUpon>DataLayer.xsd</DependentUpon>
+    </None>
+    <None Include="fonts\fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fonts\fontawesome-webfont.svg" />
+    <None Include="fonts\fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\fonts\FontAwesome.otf" />
+    <None Include="fonts\less\bordered-pulled.less" />
+    <None Include="fonts\less\core.less" />
+    <None Include="fonts\less\fixed-width.less" />
+    <None Include="fonts\less\font-awesome.less" />
+    <None Include="fonts\less\icons.less" />
+    <None Include="fonts\less\larger.less" />
+    <None Include="fonts\less\list.less" />
+    <None Include="fonts\less\mixins.less" />
+    <None Include="fonts\less\path.less" />
+    <None Include="fonts\less\rotated-flipped.less" />
+    <None Include="fonts\less\spinning.less" />
+    <None Include="fonts\less\stacked.less" />
+    <None Include="fonts\less\variables.less" />
+    <None Include="fonts\OpenSans-Regular-webfont.ttf" />
+    <None Include="fonts\scss\font-awesome.scss" />
+    <None Include="fonts\scss\_bordered-pulled.scss" />
+    <None Include="fonts\scss\_core.scss" />
+    <None Include="fonts\scss\_fixed-width.scss" />
+    <None Include="fonts\scss\_icons.scss" />
+    <None Include="fonts\scss\_larger.scss" />
+    <None Include="fonts\scss\_list.scss" />
+    <None Include="fonts\scss\_mixins.scss" />
+    <None Include="fonts\scss\_path.scss" />
+    <None Include="fonts\scss\_rotated-flipped.scss" />
+    <None Include="fonts\scss\_spinning.scss" />
+    <None Include="fonts\scss\_stacked.scss" />
+    <None Include="fonts\scss\_variables.scss" />
+    <None Include="fonts\texgyreadventor-regular-webfont.ttf" />
+    <None Include="img\.DS_Store" />
+    <None Include="img\gallery\.DS_Store" />
+    <None Include="img\gallery\Thumbs.db" />
+    <None Include="img\prettyPhoto\.DS_Store" />
+    <None Include="img\Thumbs.db" />
+    <None Include="Item_Photos\Thumbs.db" />
+    <None Include="js\.DS_Store" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CC\CurrencyConvertor.wsdl" />
+    <None Include="Web References\CC\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin_CustomerTransactions.aspx" />
+    <Content Include="images\108.cms.jpg" />
+    <Content Include="images\deletebtn.jpg" />
+    <Content Include="images\discussion_board.jpg" />
+    <Content Include="images\shopping-basket-refresh-icon.png" />
+    <Content Include="images\textbackground.gif" />
+    <Content Include="images\Untitled-1.gif" />
+    <Content Include="Member.Master" />
+    <Content Include="AboutUs.aspx" />
+    <Content Include="Admin_Homepage.aspx" />
+    <Content Include="Admin_Items.aspx" />
+    <Content Include="Admin_Loginpage.aspx" />
+    <Content Include="Admin_Tasks.aspx" />
+    <Content Include="CartDetails.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="images\101.cms.jpeg" />
+    <Content Include="images\102.cms.jpeg" />
+    <Content Include="images\103.cms.jpeg" />
+    <Content Include="images\104.cms.jpeg" />
+    <Content Include="images\105.cms.jpeg" />
+    <Content Include="images\106.cms.jpeg" />
+    <Content Include="images\106.cms.jpg" />
+    <Content Include="images\107.cms.jpeg" />
+    <Content Include="images\107.cms.jpg" />
+    <Content Include="images\108.cms.jpeg" />
+    <Content Include="images\109.cms.jpeg" />
+    <Content Include="images\110.cms.jpeg" />
+    <Content Include="images\about-us-icon-1.jpg" />
+    <Content Include="images\bkgd.jpg" />
+    <Content Include="images\bkgd1.jpg" />
+    <Content Include="images\bkgd_1.jpg" />
+    <Content Include="images\black_file.gif" />
+    <Content Include="images\blue_file.gif" />
+    <Content Include="images\body.jpg" />
+    <Content Include="images\Body_Bg1.jpg" />
+    <Content Include="images\cart.gif" />
+    <Content Include="images\Cart.jpg" />
+    <Content Include="images\cat_11.jpg" />
+    <Content Include="images\cat_12.jpg" />
+    <Content Include="images\cat_13.jpg" />
+    <Content Include="images\cat_14.jpg" />
+    <Content Include="images\cat_15.jpg" />
+    <Content Include="images\cat_16.jpg" />
+    <Content Include="images\CAUVGTUR.jpg" />
+    <Content Include="images\Changepassword_Frame.JPG" />
+    <Content Include="images\closelabel.gif" />
+    <Content Include="images\Clothes_1.jpg" />
+    <Content Include="images\Clothes_2.jpg" />
+    <Content Include="images\Clothes_3.jpg" />
+    <Content Include="images\Clothes_4.jpg" />
+    <Content Include="images\conatctus.png" />
+    <Content Include="images\FAQ.jpg" />
+    <Content Include="images\FAQs.jpg" />
+    <Content Include="images\FAQ_FRAME.JPG" />
+    <Content Include="images\featured_slide_left.png" />
+    <Content Include="images\featured_slide_right.png" />
+    <Content Include="images\featured_slide_trans.png" />
+    <Content Include="images\form_input_long.gif" />
+    <Content Include="images\Homebg.jpg" />
+    <Content Include="images\images1.jpg" />
+    <Content Include="images\images5.jpg" />
+    <Content Include="images\image_1323671324608.jpg" />
+    <Content Include="images\Items.jpg" />
+    <Content Include="images\lava.gif" />
+    <Content Include="images\lava.png" />
+    <Content Include="images\lcd_1.jpg" />
+    <Content Include="images\Log1.jpg" />
+    <Content Include="images\login.gif" />
+    <Content Include="images\Logout.jpg" />
+    <Content Include="images\Mobile_1.jpg" />
+    <Content Include="images\Mobile_2.jpg" />
+    <Content Include="images\Mobile_3.jpg" />
+    <Content Include="images\Mobile_4.jpg" />
+    <Content Include="images\Mobile_5.jpg" />
+    <Content Include="images\myorders1.JPG" />
+    <Content Include="images\NewCart.jpg" />
+    <Content Include="images\nextlabel.gif" />
+    <Content Include="images\orders.jpg" />
+    <Content Include="images\Postbox.jpg" />
+    <Content Include="images\prevlabel.gif" />
+    <Content Include="images\puhlish.jpg" />
+    <Content Include="images\P_frame_2.bmp" />
+    <Content Include="images\P_frame_3.bmp" />
+    <Content Include="images\P_frame_4.bmp" />
+    <Content Include="images\register-300x270.jpg" />
+    <Content Include="images\Register_Now_Icon.jpg" />
+    <Content Include="images\Registration_Frame.JPG" />
+    <Content Include="images\ReplyFrame.jpg" />
+    <Content Include="images\round_bot.gif" />
+    <Content Include="images\round_top.gif" />
+    <Content Include="images\Sale_1.jpg" />
+    <Content Include="images\search.gif" />
+    <Content Include="images\social-sprite.gif" />
+    <Content Include="images\twitter_bg.gif" />
+    <Content Include="images\twitter_logo.gif" />
+    <Content Include="images\Video_icon.png" />
+    <Content Include="Login_page.aspx" />
+    <Content Include="Main.Master" />
+    <Content Include="Member_Homepage.aspx" />
+    <Content Include="Member_Tasks.aspx" />
+    <Content Include="MyTransactions.aspx" />
+    <Content Include="Registration_page.aspx" />
+    <Content Include="ReviewOrder.aspx" />
+    <Content Include="scripts\index.html" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <Content Include="scripts\jquery-prettyPhoto.js" />
+    <Content Include="scripts\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="scripts\jquery.tabs.setup.js" />
+    <Content Include="Signout.aspx" />
+    <Content Include="TransactionDetails.aspx" />
+    <Content Include="ViewItemDetails.aspx" />
+    <Content Include="ViewItems.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.webservicex.net/CurrencyConvertor.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CC\</RelPath>
+      <UpdateFromURL>http://www.webservicex.net/CurrencyConvertor.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DATAMINING_ASSOCIATIONRULE_CC_CurrencyConvertor</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Attachment\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37671</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

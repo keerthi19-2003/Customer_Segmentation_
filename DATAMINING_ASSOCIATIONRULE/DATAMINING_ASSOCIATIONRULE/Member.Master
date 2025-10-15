@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Member.master.cs" Inherits="DATAMINING_ASSOCIATIONRULE.Member" %>
+<!DOCTYPE HTML>
+<html>
+<head id="Head1" runat="server">
+    <title>E Commerce</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- jQuery & Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css" />
+
+    <!-- Custom Header Styles -->
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            Customer <span>Segmentation</span>
+        </div>
+        <!-- Menu Icon for Mobile -->
+        <div id="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!-- Navigation Menu -->
+        <ul class="navbar">
+            <li><a id="A1" href="Member_Homepage.aspx" runat="server">Home</a></li>
+            <li><a id="A2" href="BrowseItems.aspx" runat="server">Browse More Products</a></li>
+            <li><a id="A3" href="MemberCart.aspx" runat="server"><img src="images/cart.gif" /></a></li>
+            <li><a id="A4" href="MyTransactions.aspx" runat="server">My Orders</a></li>
+            <li><a id="A5" href="Member_Tasks.aspx?value=Feedbacks" runat="server">Feedbacks</a></li>
+            <li><a id="A6" href="ItemFeedbacks.aspx" runat="server">Ratings</a></li>
+            <li><a id="A7" href="Member_Tasks.aspx?value=Changepassword" runat="server">Account</a></li>
+            <li><a id="A8" href="Signout.aspx?value=customer" runat="server">Signout</a></li>
+        </ul>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div style="margin-top:100px"><!-- Push down because header is fixed -->
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer_bg">
+        <div class="container">
+            <div class="row footer">
+                <div class="copy text-center">
+                    <p class="link">
+                        <span>© All rights reserved | Design by&nbsp;<a href="#">Company Name</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggle Menu Script -->
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

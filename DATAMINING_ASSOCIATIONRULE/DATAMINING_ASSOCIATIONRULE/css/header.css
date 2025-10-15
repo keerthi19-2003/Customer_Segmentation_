@@ -1,0 +1,96 @@
+﻿/* = Variables = */
+:root {
+    --text-color: #000000;
+    --main-color: #83B735;
+}
+
+/* = HEADER SECTION = */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px; /* Reduced from 18px 100px */
+    background: #EDECEA;
+}
+
+.logo {
+    font-size: 1.8rem; /* Reduced from 2.5rem */
+    font-weight: 600;
+    color: var(--text-color);
+}
+.logo span {
+    color: var(--main-color);
+}
+
+/* Navbar styles */
+.navbar {
+    position: relative;
+    display: flex;
+    list-style: none;   /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    font-size: 1.2rem;  /* Reduced from 1.5rem */
+    padding: 6px 14px;  /* Reduced padding */
+    font-weight: 600;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+    margin-top: 5px;
+    text-decoration: none; /* Removes underline */
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+/* Menu icon for mobile */
+#menu-icon {
+    font-size: 1.6rem; /* Slightly smaller */
+    cursor: pointer;
+    display: none;
+}
+
+/* = MEDIA QUERIES = */
+@media (max-width: 991px) {
+    header {
+        padding: 10px 4%;
+    }
+}
+
+@media (max-width: 816px) {
+    header {
+        padding: 8px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    .header, .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #FFFFFF;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+        transition: 0.2s ease;
+        text-align: center;
+    }
+    .navbar a {
+        padding: 1rem; /* Smaller padding */
+        display: block;
+    }
+    .navbar a:hover {
+        color: #FFFFFF;
+        background: var(--main-color);
+    }
+    .navbar.active {
+        top: 100%;
+    }
+}
